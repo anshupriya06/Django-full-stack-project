@@ -6,3 +6,4 @@ class homeform(forms.ModelForm):
         model = home
         fields =  ['text', 'photo']
         
+
