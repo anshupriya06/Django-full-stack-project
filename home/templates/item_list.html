@@ -7,8 +7,8 @@
 {% block content %}
     <h1 class="text-center mt-4">Welcome to the home page</h1>
 
-    <a class="btn btn-primary" href="{% url 'item_create' %}">Create an item.</a>
-    <div class="container row gap-3">
+    <a class="btn btn-primary mt-4 " href="{% url 'item_create' %}">Create an item.</a>
+    <div class="container mt-4 row gap-3">
         {% for item in items %}
         <div class="card" style="width: 18rem;">
             <img src="{{ item.photo.url }}" class="card-img-top" alt="...">
